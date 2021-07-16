@@ -38,3 +38,6 @@ public class CharToCode {
 ```
 
 정수형 (byte, short, int, long): 정수형에는 모두 4개의 자료형이 있으며, 각 자료형이 저장할 수 있는 값의 범위가 다르다.
+| 1 byte | 2 byte | 4 byte | 8 byte |
+|--------|--------|--------|--------|
+| byte   | short  | int    | long   |
