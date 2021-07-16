@@ -41,3 +41,51 @@ public class CharToCode {
 | 1 byte | 2 byte | 4 byte | 8 byte |
 |--------|--------|--------|--------|
 | byte   | short  | int    | long   |
+
+정수형의 오버플로우
+------------
+오버플로우: 타입이 표현할 수 있는 값의 범위를 넘어서는 것
+정수형 타입이 표현할 수 있는 최대값에 1을 더하면 최소값이 되고, 최소값에서 1을 빼면 최대값이 된다.
+부호있는 정수의 오버플로우에선 부호비트가 0에서 1이 될 때 오버플로우가 발생한다.
+* 오버플로우를 확인하는 코드
+```java
+public class OverflowEX {
+	public static void main(String[] args) {
+		short sMin = -32768;
+		short sMax = 32767;
+		char cMin = 0;
+		char cMax = 65535;
+		
+		System.out.println("sMin = "+ sMin);
+		System.out.println("sMin-1 = "+ (short)(sMin-1));
+		System.out.println("sMax = "+ sMax);
+		System.out.println("sMax+1 = "+ (short)(sMax+1));
+		System.out.println("cMin = "+ (int)cMin);
+		System.out.println("cMin-1 = "+ (int)--cMin);
+		System.out.println("cMax = "+ (int)cMax);
+		System.out.println("cMax+1 = "+ (int)++cMax);
+	}
+}
+```
+실수형 (float, double)
+* 실수형의 범위와 정밀도
+| 타입   | 저장가능한 값의 범위 (양수) | 정밀도 | 크기   |
+|--------|-----------------------------|--------|--------|
+| float  | 1.4*10^(-45) ~ 3.4*10^38    | 7자리  | 4 byte |
+| double | 4.9*10^(-324) ~ 1.8*10^308  | 15자리 | 8 byte |
+* float과 double의 정밀도를 확인하는 코드
+```java
+public class FloatEX1 {
+	public static void main(String[] args) {
+		float f = 9.12345678901234567890f;
+		float f2 = 1.2345678901234567890f;
+		double d = 9.12345678901234567890d;
+		
+		System.out.printf("     123456789012345678901234%n");
+		System.out.printf("f  : %f%n", f);
+		System.out.printf("f  : %24.20f%n", f);
+		System.out.printf("f2 : %24.20f%n", f2);
+		System.out.printf("d  : %24.20f%n", d);
+	}
+}
+```
