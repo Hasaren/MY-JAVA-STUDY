@@ -13,7 +13,7 @@ Chapter 02 변수
 초기화: 변수를 사용하기 전에 처음으로 값을 저장하는 것
 변수는 반드시 초기화 해야한다. 알 수 없는 값, 쓰레기 값이 저장되어 있을 수 있기 때문이다. 
 
-* 변수를 선언, 초기화하고 저장된 값을 읽어오는 코딩
+* 변수를 선언, 초기화하고 저장된 값을 읽어오는 코드
 ```java
 public class varEX1 {
 	public static void main(String[] args) {
@@ -28,6 +28,23 @@ public class varEX1 {
 		
 		System.out.println(year);
 		System.out.println(age);
+	}
+}
+```
+* 두 변수의 값을 교환하는 코드
+```java
+public class varEX2 {
+	public static void main(String[] args) {
+		int x = 10, y = 20;
+		int tmp = 0;
+		
+		System.out.println("x = " + x + " y =" + y);
+		
+		tmp = x;
+		x = y;
+		y = tmp;
+		
+		System.out.println("x = " + x + " y =" + y);
 	}
 }
 ```
