@@ -154,6 +154,7 @@ public class PrintfEX1 {
 ```
 * 다양한 지시자 표현을 실습하는 코드2
 ```java
+
 public class PrintfEX2 {
 	public static void main(String[] args) {
 		String url = "www.codechobo.com";
@@ -183,3 +184,19 @@ Scanner를 사용하여 화면에서 입력받기
 Scanner 클래스를 사용하기 위해 import java.util.*;을 추가한다.   
 Scanner 클래스의 객체를 생성한다.   
 nextLine() 이라는 메서드를 호출하면, 입력 대기 상태에 있다가 입력을 마치고 입력한 내용이 문자열로 반환된다.   
+* Scanner를 사용하는 코드
+```java
+import java.util.*;
+public class ScannerEX {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("두자리 정수를 하나 입력해주세요. >");
+		String input = scanner.nextLine();
+		int num = Integer.parseInt(input);
+		
+		System.out.println("입력 내용 :"+input);
+		System.out.printf("num = %d%n", num);
+	}
+}
+```
