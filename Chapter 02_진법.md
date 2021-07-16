@@ -18,9 +18,9 @@
 
 기본형
 ----
-논리형 (boolean): true와 false 중 하나를 저장한다. 기본값(default)는 false
+> 논리형 (boolean): true와 false 중 하나를 저장한다. 기본값(default)는 false
 
-문자형 (char): 단 하나의 문자만을 저장한다. 저장할 문자를 유니코드 형태로 저장한다.   
+> 문자형 (char): 단 하나의 문자만을 저장한다. 저장할 문자를 유니코드 형태로 저장한다.   
 그래서 문자 리터럴 대신 문자의 유니코드를 직접 저장 할 수도 있다.
 * 문자형 저장하는 코드
 ```java
@@ -37,7 +37,7 @@ public class CharToCode {
 }
 ```
 
-정수형 (byte, short, int, long): 정수형에는 모두 4개의 자료형이 있으며, 각 자료형이 저장할 수 있는 값의 범위가 다르다.
+> 정수형 (byte, short, int, long): 정수형에는 모두 4개의 자료형이 있으며, 각 자료형이 저장할 수 있는 값의 범위가 다르다.
 | 1 byte | 2 byte | 4 byte | 8 byte |
 |--------|--------|--------|--------|
 | byte   | short  | int    | long   |
@@ -67,7 +67,7 @@ public class OverflowEX {
 	}
 }
 ```
-실수형 (float, double)
+>실수형 (float, double)
 * 실수형의 범위와 정밀도
 
 | 타입   | 저장가능한 값의 범위 (양수) | 정밀도 | 크기   |
