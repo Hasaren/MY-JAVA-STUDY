@@ -91,6 +91,7 @@ public class FloatEX1 {
 	}
 }
 ```
+
 형변환(casting)
 ----
 변수 또는 상수의 타입을 다른 타입으로 변환하는 것
