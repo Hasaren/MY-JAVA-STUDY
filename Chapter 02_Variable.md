@@ -87,3 +87,23 @@ public class varEX2 {
 |실수형  |3.14, 3.0e8, 1.4f, 0x1.op-1|f, d   |
 |문자형  |‘A’, ‘1’, ‘\n’|        |
 |문자열  |“ABC”, “123”, “A”, “true”|        |
+
+* 문자열 리터럴을 조합하는 코드
+```java
+public class StringEX {
+	public static void main(String[] args) {
+		String name = "Ja"+"va";
+		String str = name + 0.8;
+		
+		System.out.println(name);
+		System.out.println(str);
+		System.out.println(7+" ");
+		System.out.println(" "+7);
+		System.out.println(7+"");
+		System.out.println(""+7);
+		System.out.println(""+"");
+		System.out.println(7+7+"");
+		System.out.println(""+7+7);
+	}
+}
+```
