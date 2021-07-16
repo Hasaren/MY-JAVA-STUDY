@@ -91,3 +91,22 @@ public class FloatEX1 {
 	}
 }
 ```
+형변환(casting)
+----
+변수 또는 상수의 타입을 다른 타입으로 변환하는 것
+
+	(타입)피연산자
+
+피연산자인 변수의 값은 형변환 후에도 아무런 변화가 없다.
+* 캐스팅 실습 코드
+```java
+public class CastingEX {
+	public static void main(String[] args) {
+		double d = 85.4;
+		int score = (int)d;
+		
+		System.out.println("score="+score);
+		System.out.println("d="+d);
+	}
+}
+```
